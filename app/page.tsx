@@ -215,15 +215,6 @@ effective engagement and support strategies
                 </div>
               </div>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <Image
-                src="/placeholder.svg?height=200&width=300"
-                alt="Contact illustration"
-                width={300}
-                height={200}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </section>
