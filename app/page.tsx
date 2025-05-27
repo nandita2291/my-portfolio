@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -22,11 +20,14 @@ export default function Portfolio() {
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
-          <Link href="https://github.com/nandita2291" className="text-gray-700 hover:text-gray-900 transition-colors">
+          <Link href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
             <Github className="w-5 h-5" />
           </Link>
-          <Link href="https://www.linkedin.com/in/nandita-sajeev/" className="text-gray-700 hover:text-gray-900 transition-colors">
+          <Link href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
             <Linkedin className="w-5 h-5" />
+          </Link>
+          <Link href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
+            <Twitter className="w-5 h-5" />
           </Link>
         </div>
       </header>
@@ -37,7 +38,7 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-lg text-gray-600">Hello, I'm Nandita,</p>
+                <p className="text-lg text-gray-600">Hello, I'm Nandita</p>
                 <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
                   Software
                   <br />
@@ -76,12 +77,20 @@ export default function Portfolio() {
       <section id="about" className="px-8 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl font-bold text-gray-900 mb-8">About</h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            I'm Nandita Sajeev, an Associate Software Developer with a strong foundation in full-stack development using
+            Angular and C# .NET. I'm deeply passionate about Artificial Intelligence and Machine Learning, which I'm
+            currently pursuing through an M.Tech at BITS Pilani. My goal is to merge intelligent systems with intuitive
+            design to build smarter, more human-centered digital experiences.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            With hands-on experience in designing accessible interfaces, writing robust test suites, and integrating
+            scalable APIs, I love turning complex ideas into real, impactful solutions. Whether it's decoding human
+            emotions through AI or building clean, performant UI components, I thrive on challenges that blend
+            creativity with deep tech.
+          </p>
           <p className="text-lg text-gray-600 leading-relaxed">
-            I'm Nandita Sajeev, an Associate Software Developer with a strong foundation in full-stack development using Angular and C# .NET. I’m deeply passionate about Artificial Intelligence and Machine Learning, which I’m currently pursuing through an M.Tech at BITS Pilani. My goal is to merge intelligent systems with intuitive design to build smarter, more human-centered digital experiences.<br></br>
-            <br />
-With hands-on experience in designing accessible interfaces, writing robust test suites, and integrating scalable APIs, I love turning complex ideas into real, impactful solutions. Whether it's decoding human emotions through AI or building clean, performant UI components, I thrive on challenges that blend creativity with deep tech.<br></br>
-<br />
-I believe in continuous learning, effective communication, and using technology as a tool to improve lives.
+            I believe in continuous learning, effective communication, and using technology as a tool to improve lives.
           </p>
         </div>
       </section>
@@ -93,8 +102,10 @@ I believe in continuous learning, effective communication, and using technology 
             <div className="absolute -left-2 top-0 w-4 h-4 bg-gray-900 rounded-full"></div>
             <div className="space-y-2">
               <h3 className="text-xl font-bold text-gray-900">2023 - Present</h3>
+              <h4 className="text-lg font-semibold text-gray-800">Associate Software Developer at SOTI</h4>
               <p className="text-gray-600">
-                Associate Software Developer at SOTI
+                Working on full-stack development using Angular and C# .NET, focusing on building scalable enterprise
+                solutions and intuitive user interfaces.
               </p>
             </div>
           </div>
@@ -104,6 +115,7 @@ I believe in continuous learning, effective communication, and using technology 
       {/* Portfolio Section */}
       <section id="work" className="px-8 py-16">
         <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold text-gray-900 mb-12">Work</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <a
               href="https://github.com/nandita2291/Emotion-recognition-online-learners"
@@ -123,19 +135,20 @@ I believe in continuous learning, effective communication, and using technology 
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Emotion Recognition of Online Learners using DenseNet</h3>
                 <p className="text-gray-600 text-sm">
-                  Utilized deep learning techniques to analyze and interpret the emotional states of online learners during virtual meetings.
+Utilized deep learning techniques to analyze and interpret the emotional states of online learners during virtual meetings.
 Generated detailed reports on learners’ emotional states to provide insights and enhance understanding, enabling more
-effective engagement and support strategies
+effective engagement and support strategies                
                 </p>
               </div>
             </a>
+
             <a
               href="https://github.com/nandita2291/SinoText"
               target="_blank"
               rel="noopener noreferrer"
               className="block overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
             >
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
+              <div className="aspect-video bg-gradient-to-br from-pink-400 to-red-600">
                 <Image
                   src="/SinoText.png?height=300&width=400"
                   alt="SinoText"
@@ -147,17 +160,17 @@ effective engagement and support strategies
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SinoText</h3>
                 <p className="text-gray-600 text-sm">
-                  SinoText is an image classification android application that recognises Indian sign language and converts it into text.
+                    SinoText is an image classification android application that recognises Indian sign language and converts it into text.
                 </p>
               </div>
             </a>
-            <a
+               <a
               href="https://github.com/nandita2291/Medusa"
               target="_blank"
               rel="noopener noreferrer"
               className="block overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
             >
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
+              <div className="aspect-video bg-gradient-to-br from-pink-400 to-red-600">
                 <Image
                   src="/medusa.png?height=300&width=400"
                   alt="Medusa"
@@ -180,9 +193,13 @@ effective engagement and support strategies
       {/* Contact Section */}
       <section className="px-8 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold text-gray-900 mb-8">Contact Me</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-8">Contact</h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                I'm always interested in discussing new opportunities, innovative projects, or collaborations in AI/ML
+                and software development. Feel free to reach out!
+              </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-gray-600" />
@@ -190,13 +207,22 @@ effective engagement and support strategies
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-gray-600" />
-                  <span className="text-gray-600">+91 7358440920</span>
+                  <span className="text-gray-600">+91 73584 40920</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-gray-600" />
                   <span className="text-gray-600">Kochi, India</span>
                 </div>
               </div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <Image
+                src="/placeholder.svg?height=200&width=300"
+                alt="Contact illustration"
+                width={300}
+                height={200}
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
