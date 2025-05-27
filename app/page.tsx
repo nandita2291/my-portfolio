@@ -45,7 +45,9 @@ export default function Portfolio() {
                 </h1>
                 <p className="text-lg text-gray-600">based in Kochi, India</p>
               </div>
-              <Button className="bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-3 rounded-full font-medium">
+              <Button
+                className="bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-3 rounded-full font-medium"
+                onClick={() => window.open("/NanditaSajeev_Resume.pdf", "_blank")}>
                 Resume
               </Button>
             </div>
@@ -100,11 +102,12 @@ I believe in continuous learning, effective communication, and using technology 
       <section id="work" className="px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="overflow-hidden bg-white shadow-lg">
+            <Card className="overflow-hidden bg-white shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300"
+              onClick={() => window.open("https://github.com/nandita2291/Emotion-recognition-online-learners", "_blank")}>
               <CardContent className="p-0">
                 <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/emoDetect.png?height=300&width=400"
                     alt="Emotion Detection of Online Learners"
                     width={400}
                     height={300}
@@ -122,12 +125,13 @@ effective engagement and support strategies
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden bg-white shadow-lg">
+            <Card className="overflow-hidden bg-white shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300"
+              onClick={() => window.open("https://github.com/nandita2291/SinoText", "_blank")}>
               <CardContent className="p-0">
                 <div className="aspect-video bg-gradient-to-br from-pink-400 to-red-600">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Project 2"
+                    src="/Sinotext.png?height=300&width=400"
+                    alt="SinoText"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover"
@@ -137,6 +141,26 @@ effective engagement and support strategies
                   <h3 className="text-xl font-bold text-gray-900 mb-2">SinoText</h3>
                   <p className="text-gray-600 text-sm">
                     SinoText is an image classification android application that recognises Indian sign language and converts it into text.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+             <Card className="overflow-hidden bg-white shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300"
+              onClick={() => window.open("https://github.com/nandita2291/Medusa", "_blank")}>
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-br from-pink-400 to-red-600">
+                  <Image
+                    src="/medusa.png?height=300&width=400"
+                    alt="Medusa"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Medusa</h3>
+                  <p className="text-gray-600 text-sm">
+                    MEDUSA or MEDical Utility Segregation Algorithm is a deep learning model for segregating medical wastes. Waste segregation is a vital role in waste management and proper segregation can result in effective waste management. This model will classify the given waste image into prominent medical waste categories.
                   </p>
                 </div>
               </CardContent>
