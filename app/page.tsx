@@ -3,8 +3,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { ProjectCard } from "@/components/project-card"
-import { ResumeButton } from "@/components/resume-button"
 
 export default function Portfolio() {
   return (
@@ -47,7 +45,14 @@ export default function Portfolio() {
                 </h1>
                 <p className="text-lg text-gray-600">based in Kochi, India</p>
               </div>
-              <ResumeButton />
+              <a
+                href="/NanditaSajeev_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-3 rounded-full font-medium transition-colors"
+              >
+                Resume
+              </a>
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
@@ -100,30 +105,74 @@ I believe in continuous learning, effective communication, and using technology 
       <section id="work" className="px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-              <ProjectCard
-              title="Emotion Recognition of Online Learners using DenseNet"
-              description="Utilized deep learning techniques to analyze and interpret the emotional states of online learners during virtual meetings.
+            <a
+              href="https://github.com/nandita2291/Emotion-recognition-online-learners"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
+            >
+              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
+                <Image
+                  src="/emoDetect.png?height=300&width=400"
+                  alt="Emotion Detection of Online Learners"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Emotion Recognition of Online Learners using DenseNet</h3>
+                <p className="text-gray-600 text-sm">
+                  Utilized deep learning techniques to analyze and interpret the emotional states of online learners during virtual meetings.
 Generated detailed reports on learners’ emotional states to provide insights and enhance understanding, enabling more
-effective engagement and support strategies"
-              imageUrl="/emoDetect.png?height=300&width=400"
-              projectUrl="https://github.com/nandita2291/Emotion-recognition-online-learners"
-              gradient="bg-gradient-to-br from-blue-400 to-purple-600"
-            />
-            <ProjectCard
-              title="SinoText"
-              description="SinoText is an image classification android application that recognises Indian sign language and converts it into text."
-              imageUrl="/Sinotext.png?height=300&width=400"
-              projectUrl="https://github.com/nandita2291/SinoText"
-              gradient="bg-gradient-to-br from-blue-400 to-purple-600"
-            />
-
-             <ProjectCard
-              title="Medusa"
-              description="MEDUSA or MEDical Utility Segregation Algorithm is a deep learning model for segregating medical wastes. Waste segregation is a vital role in waste management and proper segregation can result in effective waste management. This model will classify the given waste image into prominent medical waste categories."
-              imageUrl="/medusa.png?height=300&width=400"
-              projectUrl="https://github.com/nandita2291/Medusa"
-              gradient="bg-gradient-to-br from-blue-400 to-purple-600"
-            />
+effective engagement and support strategies
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/nandita2291/SinoText"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
+            >
+              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
+                <Image
+                  src="/SinoText.png?height=300&width=400"
+                  alt="SinoText"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">SinoText</h3>
+                <p className="text-gray-600 text-sm">
+                  SinoText is an image classification android application that recognises Indian sign language and converts it into text.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/nandita2291/Medusa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg"
+            >
+              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-600">
+                <Image
+                  src="/medusa.png?height=300&width=400"
+                  alt="Medusa"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Medusa</h3>
+                <p className="text-gray-600 text-sm">
+                  MEDUSA or MEDical Utility Segregation Algorithm is a deep learning model for segregating medical wastes. Waste segregation is a vital role in waste management and proper segregation can result in effective waste management. This model will classify the given waste image into prominent medical waste categories.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
