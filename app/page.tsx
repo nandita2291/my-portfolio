@@ -150,7 +150,7 @@ effective engagement and support strategies
             >
               <div className="aspect-video bg-gradient-to-br from-pink-400 to-red-600">
                 <Image
-                  src="/SinoText.png?height=300&width=400"
+                  src="/Sinotext.png?height=300&width=400"
                   alt="SinoText"
                   width={400}
                   height={300}
